@@ -1,0 +1,381 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+#myVideo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}
+video {
+  filter: brightness(.2);
+}
+.aboutus-container {
+  background: #000e24;
+  border-radius: 20px;
+}
+.aboutus-container .info .title {
+  color: #fff;
+  font-weight: 700;
+}
+.aboutus-container .info p {
+  color: #fff;
+  font-weight: 500;
+}
+@media only screen and (max-width: 989px) {
+  .aboutus-container {
+    text-align: center;
+  }
+  .text-nav {
+    color: #000 !important;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  background-color: #000;
+}
+.navbar {
+  position: fixed !important;
+}
+.navbar-tr {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(247, 245, 245, 0.4) !important;
+  border: 0;
+  box-shadow: none;
+  transition: all ease-in-out;
+}
+.navbar-tr-scroll {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgb(255, 255, 255) !important;
+  border: 0;
+  box-shadow: none;
+  transition: all ease-in-out;
+}
+.footer {
+  background-color: #000e24 !important;
+}
+.img-center {
+  position: relative;
+}
+.img-center img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.br {
+  color: #fff;
+}
+.br-scroll {
+  color: #000;
+}
+@media only screen and (max-width: 768px) {
+  .img-center img {
+    position: relative;
+    top: 0;
+    left: 0;
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.parallex-box {
+  background-image: url(../img/ill/1.svg);
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.counter {
+  font-family: "Ubuntu", sans-serif;
+}
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgb(0, 0, 0);
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #fff;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #162f58;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#Capa_1 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog-img {
+  width: 100%;
+  height: 400px !important;
+}
+.services-card {
+  height: 400px;
+  overflow-y: auto;
+}
+.navbar-toggler span {
+  color: #000 !important;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 1px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(37, 37, 37, 0.7);
+  border-radius: 10px;
+}
+
+*, html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+}
+/* ================== Badge Products CSS ========================*/
+.products {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.products ul {
+  margin: 0px;
+  text-align: center;
+}
+.products ul li {
+  width: 320px;
+  height: 213px;
+  background: #f8f8f8;
+  display: inline-block;
+  position: relative;
+  margin: 15px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* ================== Badge Overlay CSS ========================*/
+.badge-overlay {
+  position: absolute;
+  left: 0%;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 100;
+  -webkit-transition: width 1s ease, height 1s ease;
+  -moz-transition: width 1s ease, height 1s ease;
+  -o-transition: width 1s ease, height 1s ease;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+/* ================== Badge CSS ========================*/
+.badge {
+  margin: 0;
+  padding: 0;
+  color: white;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: normal;
+  text-transform: uppercase;
+  background: #ed1b24;
+}
+.badge::before, .badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  margin: 0 -1px;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  min-width: 55px;
+}
+.badge::before {
+  right: 100%;
+}
+.badge::after {
+  left: 100%;
+}
+/* ================== Badge Position CSS ========================*/
+.top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -ms-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+  -webkit-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+  transform: translateX(-30%) translateY(0%) rotate(-45deg);
+  -ms-transform-origin: top right;
+  -webkit-transform-origin: top right;
+  transform-origin: top right;
+}
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -ms-transform: translateX(30%) translateY(0%) rotate(45deg);
+  -webkit-transform: translateX(30%) translateY(0%) rotate(45deg);
+  transform: translateX(30%) translateY(0%) rotate(45deg);
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -ms-transform: translateX(-30%) translateY(0%) rotate(45deg);
+  -webkit-transform: translateX(-30%) translateY(0%) rotate(45deg);
+  transform: translateX(-30%) translateY(0%) rotate(45deg);
+  -ms-transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -ms-transform: translateX(30%) translateY(0%) rotate(-45deg);
+  -webkit-transform: translateX(30%) translateY(0%) rotate(-45deg);
+  transform: translateX(30%) translateY(0%) rotate(-45deg);
+  -ms-transform-origin: bottom left;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+.top-full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.middle-full {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  -ms-transform: translateX(0%) translateY(-50%) rotate(0deg);
+  -webkit-transform: translateX(0%) translateY(-50%) rotate(0deg);
+  transform: translateX(0%) translateY(-50%) rotate(0deg);
+}
+.bottom-full {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+/* ================== Badge color CSS ========================*/
+.badge.red {
+  background: #ed1b24;
+}
+.badge.orange {
+  background: #fa7901;
+}
+.badge.pink {
+  background: #ee2b8b;
+}
+.badge.blue {
+  background: #00adee;
+}
+.badge.green {
+  background: #b4bd00;
+}
+.knowledge img {
+  padding: 20px;
+}
+.knowledge-img {
+  width: 100%;
+  height: 100%;
+}
+

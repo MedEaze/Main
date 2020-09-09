@@ -1,0 +1,18 @@
+.tab-pane {
+  height: 500px !important;
+  overflow-y: auto;
+}
+.nav-link {
+  color: #000e24 !important;
+}
+.nav-item .nav-link.active {
+  color: #fff !important;
+}
+.user-search {
+  width: 30% !important;
+}
+@media only screen and (max-width: 568px) {
+  .user-search {
+    width: 100% !important;
+  }
+}
